@@ -1,1 +1,1 @@
-customTools = [".muse/staticcheck.sh"]
+customTools = ["sample_hello.sh"]
