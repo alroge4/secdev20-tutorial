@@ -15,6 +15,7 @@ function run(){
 		   \"message\": \"YO YO World!\", \
 		   \"file\": \"N/A\", \
 		   \"line\": 0 \
+		}"
 }
 
 if[[ "$cmd" = "run" ]]; then
