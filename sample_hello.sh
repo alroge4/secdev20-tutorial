@@ -1,4 +1,4 @@
-/usr/bin/env bash
+#!/usr/bin/env bash
 commit=$2
 cmd=$3
 
