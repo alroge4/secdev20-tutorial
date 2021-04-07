@@ -31,7 +31,7 @@ function gettool(){
 	pushd /tmp >/dev/null
 
 	#need to get binary in git repo so pull raw version of file
-	curl -LO https://raw.githubusercontent.com/alroge4/secdev20-tutorial/find/master/vulDis_angr1.py
+	curl -LO https://raw.githubusercontent.com/alroge4/secdev20-tutorial/find/master/vulDis_angr2.py
 	
 	#make executable
 	#chmod a+x vulDis_angr1.py
