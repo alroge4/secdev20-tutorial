@@ -21,21 +21,6 @@ function applicable(){
 #take json from angr and give to how muse wants
 #function emit_results(){}
 
-
-#how to have shell script run angr
-#run angr
-function run(){
-	#actually get tool 
-	gettool
-
-	#call angr, where it is download, and start at current dir if fail nada
-	raw_resuts=$(/tmp/vulDis_angr1.py -f json -fail "" ./...)
-	
-	#call emit_results--set up json
-	#emit_results "$raw_results"
-}	
-
-
 #get binary ready to call/run, get depends
 function gettool(){
 	
@@ -53,6 +38,25 @@ function gettool(){
 
 	#leave tmp dir, go bk to where began
 	popd >/dev/null
+
+}
+
+
+#how to have shell script run angr
+#run angr
+function run(){
+	#actually get tool 
+	gettool
+
+	#call angr, where it is download, and start at current dir if fail nada
+	raw_resuts=$(/tmp/vulDis_angr1.py -f json -fail "" ./...)
+	
+	#call emit_results--set up json
+	#emit_results "$raw_results"
+}	
+
+
+
 
 if [[ "$cmd" = "run" ]] ; then
 run
