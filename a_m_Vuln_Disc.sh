@@ -24,8 +24,17 @@ function applicable(){
 #get binary ready to call/run, get depends
 function gettool(){
 	
-	#make a virt env to run angr
+	#get virt env to run angr
 	sudo apt-get install python3-dev libffi-dev build-essential virtualenvwrapper
+
+	#make a virt env to run angr
+	mkvirtualenv angrRun
+
+	#test:list virt env????
+	lsvirtualenv
+
+	#start that virt env
+	workon angrRun
 	
 	#make a temp dir
 	pushd /tmp >/dev/null
