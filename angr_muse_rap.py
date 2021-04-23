@@ -23,7 +23,7 @@ json_file = open('angr_muse.json', 'a')
 
 #run the angr vulnerability tool on a file and redirect output to a file
 #muse_feed should be what muse feeds tool, here was CADET...
-subprocess.run(["python", "vulDis_angr2_trial.py", "CADET_00001"],
+subprocess.run(["python", "vulDis_angr2_trial.py", "/muse/code/CADET_00001"],
                  stdout=output_file, stderr=output_file)
 
 output_file.close()
