@@ -63,7 +63,7 @@ function run(){
 	raw_resuts=$(/tmp/angr_muse_rap.py -f json -fail "" ./...)
 	
 	#call emit_results--set up json
-	#emit_results "$raw_results"
+	emit_results "$raw_results"
 }	
 
 
