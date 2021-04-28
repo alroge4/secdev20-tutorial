@@ -19,7 +19,10 @@ function applicable(){
 }
 
 #take json from angr and give to how muse wants
-#function emit_results(){}
+function emit_results(){
+	echo "$1" | \
+	 jq --slurp '.[] | .file = .location.file | .line = .location.line | .type = .code | del(.location) | del(.severity) | del(.code) | del(.end) '
+}
 
 #get binary ready to call/run, get depends
 function gettool(){
