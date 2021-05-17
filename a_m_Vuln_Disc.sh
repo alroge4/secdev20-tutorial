@@ -61,6 +61,8 @@ function gettool(){
 #how to have shell script run angr
 #run angr
 function run(){
+
+	echo '{ "helloooooo" : "you"}' | jq
 	#actually get tool 
 	gettool
 
@@ -71,8 +73,6 @@ function run(){
 	#call emit_results--set up json
 	emit_results "$raw_results"
 }	
-
-
 
 
 if [[ "$cmd" = "run" ]] ; then
