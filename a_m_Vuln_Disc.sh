@@ -33,7 +33,7 @@ function gettool(){
 	
 	#get virt env 
 	#make a virt env to run angr
-	mkvirtualenv --python=$(which python3) angrTemp && pip install angr > /dev/null 2>&1
+	mkvirtualenv --python=$(which python3) angrTemp > /dev/null 2>&1 && pip install angr > /dev/null 2>&1
 
 	#above cmd does this auto
 	#mkvirtualenv angrRun
