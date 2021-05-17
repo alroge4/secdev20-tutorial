@@ -48,7 +48,7 @@ function gettool(){
 
     ###change file name
 	#need to get binary in git repo so pull raw version of file
-	curl -LO https://raw.githubusercontent.com/alroge4/secdev20-tutorial/find/master/logerRunAngr.py
+	curl -LO https://raw.githubusercontent.com/alroge4/secdev20-tutorial/find/master/logerRunAngr.py > /dev/null 2>&1
 	
 	#make executable
 	chmod a+x ~/tmp/angrDir/tmp/jsonfun/loggerRunAngr.py
