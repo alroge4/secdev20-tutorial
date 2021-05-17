@@ -25,8 +25,8 @@ handler.setLevel(logging.WARNING)
 #formatter = logging.Formatter('%(levelname)-7s | %(asctime)-23s | %(name)-8s | %(message)s')
 #tring json formaterr
 
-#formatter = logging.Formatter('{"level": "%(levelname)s", "time": "%(asctime)s", "name": "%(name)s" , "message": "%(message)s"}')
-formatter = logging.Formatter('{"file": "%(levelname)s", "line": "%(asctime)s", "type": "%(name)s" , "message": "%(message)s"}')
+formatter = logging.Formatter('{"level": "%(levelname)s", "time": "%(asctime)s", "name": "%(name)s" , "message": "%(message)s"}')
+#formatter = logging.Formatter('{"file": "%(levelname)s", "line": "%(asctime)s", "type": "%(name)s" , "message": "%(message)s"}')
 
 handler.setFormatter(formatter)
 mylogs.addHandler(handler)
